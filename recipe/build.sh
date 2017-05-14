@@ -71,8 +71,12 @@ cmake -LAH                                                                \
     -DBUILD_OPENEXR=1                                                     \
     -DBUILD_JASPER=0                                                      \
     -DBUILD_JPEG=0                                                        \
-    -DWITH_CUDA=0                                                         \
-    -DWITH_OPENCL=0                                                       \
+    -DWITH_CUDA=1                                                         \
+    -DCUDA_ARCH_BIN="6.1" \
+    -DCUDA_ARCH_PTX="" \
+    -DWITH_CUBLAS=1 \
+    -DWITH_TBB=1 \
+    -DWITH_OPENCL=1                                                       \
     -DWITH_OPENNI=0                                                       \
     -DWITH_FFMPEG=1                                                       \
     -DWITH_MATLAB=0                                                       \
