@@ -72,6 +72,9 @@ cmake -LAH                                                                \
     -DBUILD_JASPER=0                                                      \
     -DBUILD_JPEG=0                                                        \
     -DWITH_CUDA=1                                                         \
+    -DWITH_NVCUVID=1 \
+    -DENABLE_FAST_MATH=1 \
+    -DCUDA_FAST_MATH=1 \
     -DCUDA_ARCH_BIN="6.1" \
     -DCUDA_ARCH_PTX="" \
     -DWITH_CUBLAS=1 \
